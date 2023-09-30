@@ -1,0 +1,21 @@
+*{
+    font-size: 20px;    
+}
+img{
+    width: 200px;
+    
+}
+.infospessoa{
+    border: solid black 3px;
+    background-color: rgb(16, 3, 2);
+    padding: 25px;
+}
+td, th{
+    padding: 19px 0;
+    border: solid black 2px ;
+}
+.coiso{
+    align-items: center;
+    justify-content: center;
+    padding-left: 15%;
+}

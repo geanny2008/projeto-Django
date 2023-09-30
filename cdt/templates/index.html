@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {%if alunos%}
+
+<div class="coiso">
+     <table class="col-md-4 w-75">
+            <tr class="text-center md-4 col-md-4 text-danger border">
+                <th>Ação </th>
+                <th>Email</th>
+                <th>Cadastro</th>
+            </tr>
+
+        {% for aluno in alunos %}
+
+        <tr class="text-center md-4 col-md-4 border">
+            <td>{{ aluno.nome}}</td>
+            <td>{{ aluno.email}}</td>
+
+            <td>
+                <a href="{% url 'aluno' id=aluno.id %}" class="btn btn-danger btn-sm ">Entrar</a>
+            </td>
+        </tr> 
+
+        {% endfor%}
+    </table>
+</div>
+        
+        
+    
+   {% else %}
+   <p> Sem alunos para apresentar no momento</p>
+   {% endif %} 
+
+{% endblock%}
