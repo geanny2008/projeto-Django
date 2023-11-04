@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<form action="" method="post" enctype="multipart/form-data" autocomplete="on">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="enviar">
+    <a href="{% url 'index' %}" class="btn btn-danger btn-sm ">voltar</a>
+
+</form>
+{% endblock%}
