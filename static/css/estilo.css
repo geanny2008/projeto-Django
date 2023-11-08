@@ -20,10 +20,36 @@ td, th{
     padding-left: 15%;
 }
 body{
-    height: 600px;
-    height: 600px;
     /* background-color: rgba(201, 24, 62, 0.133); */
-    background-image: linear-gradient(to top, #6d0f70, #cc69c4, rgb(236, 148, 199)) ;
+    /* background-image: linear-gradient(to top, #6d0f70, #cc69c4, rgb(236, 148, 199)) ; */
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url(/static/imgs/imag1.jpg);
+}
+
+
+/* footer do começo */
+
+
+footer{
+    background-color: rgb(223, 97, 97);
+    /* margin-top: 40vh; */
+}
+
+.segundo{
+    display: flex;
+    flex-direction: row;
+    align-items: end ;
+    justify-content: space-between;
+}
+.segundo span:nth-child(n+3){
+    margin-left:15px;
+}
+.direito span a{
+    text-decoration: none;
+    color: #222;
+}
+.direito span a:hover{
+    text-decoration: underline;
+    color: aliceblue;
 }

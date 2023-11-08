@@ -16,16 +16,16 @@
 
         {% for aluno in alunos %}
 
-        <tr class="text-center md-4 col-md-4 ">
-            <td>{{ aluno.nome}}</td>
-            <!-- <td>{{ aluno.email}}</td> -->
+            <tr class="text-center md-4 col-md-4 ">
+                <td>{{ aluno.nome}}</td>
+                <!-- <td>{{ aluno.email}}</td> -->
 
-            <td>
-                <a href="{% url 'aluno' id=aluno.id %}" class="btn btn-danger btn-sm ">Entrar</a>
-                <a href="{% url 'editar' id=aluno.id %}" class="btn btn-danger btn-sm ">editar</a>
-                <a href="{% url 'deletar' id=aluno.id %}" class="btn btn-danger btn-sm ">deletar</a>
-            </td>
-        </tr> 
+                <td>
+                    <a href="{% url 'aluno' id=aluno.id %}" class="btn btn-danger btn-sm ">Entrar</a>
+                    <a href="{% url 'editar' id=aluno.id %}" class="btn btn-danger btn-sm ">editar</a>
+                    <a href="{% url 'deletar' id=aluno.id %}" class="btn btn-danger btn-sm ">deletar</a>
+                </td>
+            </tr>                                                                                                                       
 
         {% endfor%}
     </table>
