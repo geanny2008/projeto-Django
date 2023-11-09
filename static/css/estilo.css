@@ -20,20 +20,23 @@ td, th{
     padding-left: 15%;
 }
 body{
-    /* background-color: rgba(201, 24, 62, 0.133); */
-    /* background-image: linear-gradient(to top, #6d0f70, #cc69c4, rgb(236, 148, 199)) ; */
+    /* background-color: rgba(93, 19, 35, 0.914); */
+    background-image: linear-gradient(to top, #6d0f70, #cc69c4, #ec94c7);
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(/static/imgs/imag1.jpg);
+    /* background-image: url(/static/imgs/imag1.jpg); */
 }
-
-
+.mnhei{
+    
+    min-height: 100vh;
+}
 /* footer do começo */
 
 
 footer{
-    background-color: rgb(223, 97, 97);
+    /* background-color: rgb(223, 97, 97); */
     /* margin-top: 40vh; */
+    margin-top: auto ;
 }
 
 .segundo{
