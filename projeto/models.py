@@ -10,12 +10,10 @@ class Aluno(models.Model):
     email = models.EmailField(max_length=200)
     contato = models.CharField(max_length=11)
 
-    def __str__(self):
+    def __str__(self):   
         return self.nome
- 
 
-
- #planos de negocios:
+  #planos de negocios:
  
 
     

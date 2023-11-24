@@ -1,0 +1,4 @@
+precisa de login                           to fazendo
+precisa de formulario para cadastrar        ja fiz
+precisa de botão de excluir e editar         ja fiz
+precisa de ambiente autenticado              falta

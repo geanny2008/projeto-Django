@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="login">
+    <form class="card" action="" method="post" >
+        {% csrf_token %}
+        <div class="cabecario">
+            <h2>Login</h2>
+        </div>
+        <div class="conteudo">
+            <div class="usuario">
+                <label for="form">Usuario</label>
+                <input type="text" id="usuario" autocomplete="off">
+            </div>
+            <div class="senha">
+                <label for="password">Senha</label>
+                <input type="password" id="password" autocomplete="off">
+            </div>
+        </div>
+        <div class="card-footer">
+            <input type="submit" value="login" class="submit">
+            <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+        </div>
+    </form>
+</div>
+
+
+{%endblock%}

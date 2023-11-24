@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+ {% extends 'base.html' %}
 {% load static %}
 
 {% block content %}
@@ -12,29 +12,31 @@
                 <!-- <th>NOME DOS USUARIOS </th> -->
                 <!-- <th>Email</th> -->
                 <!-- <th>Cadastrados</th> -->
-            </tr>
+             </tr>
 
-        {% for aluno in alunos %}
+        {% for aluno in alunos %} 
+        <!-- Essa expressão é uma construção de loop que permite iterar sobre uma lista de elementos, onde aluno é uma variável que representará cada elemento da lista, e alunos é a lista em si -->
 
             <tr class="text-center md-4 col-md-4 ">
-                <td>{{ aluno.nome}}</td>
-                <!-- <td>{{ aluno.email}}</td> -->
+                <td>{{ aluno.nome}}</td> 
+                 <td>{{ aluno.email}}</td> 
 
-                <td>
+                 <td>
                     <a href="{% url 'aluno' id=aluno.id %}" class="btn btn-danger btn-sm ">Entrar</a>
                     <a href="{% url 'editar' id=aluno.id %}" class="btn btn-danger btn-sm ">editar</a>
                     <a href="{% url 'deletar' id=aluno.id %}" class="btn btn-danger btn-sm ">deletar</a>
                 </td>
-            </tr>                                                                                                                       
-
-        {% endfor%}
+            </tr>
+         {% endfor%}
     </table>
-</div>
-        
-        
+</div> 
+         
+       
     
-   {% else %}
+    {% else %}
    <p> Sem alunos para apresentar no momento</p>
    {% endif %} 
 
-{% endblock%}
+{% endblock%} 
+
+

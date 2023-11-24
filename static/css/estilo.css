@@ -13,12 +13,25 @@ img{
 td, th{
     padding: 19px 0;
     /* border: solid black 2px ; */
+    border: 1px solid #ddd;
+    text-align: center;
 }
 .coiso{
+    display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 15%;
 }
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
 body{
     /* background-color: rgba(93, 19, 35, 0.914); */
     background-image: linear-gradient(to top, #6d0f70, #cc69c4, #ec94c7);
@@ -30,8 +43,8 @@ body{
     
     min-height: 100vh;
 }
-/* footer do começo */
 
+/* footer do começo */
 
 footer{
     /* background-color: rgb(223, 97, 97); */
@@ -56,3 +69,82 @@ footer{
     text-decoration: underline;
     color: aliceblue;
 }
+
+
+/* css cadastro */
+
+
+form ,label{
+    display: block;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.botaos{
+    text-align: center;
+}
+
+
+/* css login */
+
+.login{
+    font-family: Arial, sans-serif;
+    /* background-color: #ffffff; */
+    /* margin: 0; */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 5%;
+}
+.card {
+
+    background-color: rgba(19, 19, 19, 0.3);
+
+    padding: 40px;
+
+    border-radius: 2px;
+
+    width:60%;
+    color: white;
+
+}
+.cabecario-login {
+
+    padding-bottom: 50px;
+
+    opacity: 0.8;
+
+    color: #a13854;
+
+}
+
+/* .conteudo{
+    text-align: center;
+} */
+.usuario,
+.senha{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    
+}
+.conteudo label, input{
+    width: 40%;
+    display: block;
+    margin: 0% auto;
+    border: 0;
+}
+.card-footer .submit{
+    background-color: #b76def;
+}
+
+.recuperar_senha {
+    color: #ededed;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
