@@ -18,6 +18,7 @@
       <img src="{% static 'imgs/Fotofundo.avif' %}" alt="">
       {% if user.is_authenticated%}
       <a href="{% url 'criar' %}" class="btn btn-dark btn-sm ">criar novo usuario</a>
+      <a href="/accounts/logout/" class="btn btn-dark btn-sm ">Sair</a>
       {%endif%}
       
         {% block content %}{%endblock%}

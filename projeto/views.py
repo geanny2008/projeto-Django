@@ -4,12 +4,12 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def index(request):
-    alunos = models.Aluno.objects.all()
+    alunos = models.Aluno.objects.all() # busca todos os objetos (registros) do modelo "Aluno" no banco de dados da sua aplicação Django
     return render(request, 'index.html',{'alunos':alunos})
 @login_required
-def aluno(request, id):
-    aluno = get_object_or_404(models.Aluno, id=id)
-    return render(request, 'aluno.html', {'aluno':aluno})
+def aluno(request, id): #função de visualização do Django chamada `aluno` que recebe um parâmetro `id`.
+    aluno = get_object_or_404(models.Aluno, id=id) #recuperar um único objeto do banco de dados usando a função `get_object_or_404`,parâmetros de pesquisa (neste caso, `id=id`)
+    return render(request, 'aluno.html', {'aluno':aluno}) #resposta de view do Django que renderiza um template HTML com um contexto contendo dados a serem exibidos no template.
 
 @login_required
 def create(request):

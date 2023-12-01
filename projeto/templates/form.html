@@ -6,12 +6,12 @@
     {% csrf_token %}
     {{form}}
     
+    <div class="botaos">
+        <input type="submit" value="enviar">
+            <a href="{% url 'index' %}" class="btn btn-danger btn-sm ">voltar</a>
+    </div>
 
 </form>
 
-<div class="botaos">
-    <input type="submit" value="enviar">
-        <a href="{% url 'index' %}" class="btn btn-danger btn-sm ">voltar</a>
-</div>
 
 {% endblock%}
